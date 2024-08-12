@@ -18,8 +18,17 @@ public class ModItems {
                     .stacksTo(16)
                     .food(new FoodProperties.Builder()
                             .nutrition(5)
-                            .saturationModifier(.2f)
+                            .saturationModifier(.4f)
                             .build())
                     .rarity(Rarity.EPIC)
+            ));
+    public static final RegistryObject<Item> RAW_ZIRCON = ITEMS.register("raw_zircon",
+            () -> new Item(new Item.Properties()
+                    .stacksTo(16)
+                    .food(new FoodProperties.Builder()
+                            .nutrition(2)
+                            .saturationModifier(.2f)
+                            .build())
+                    .rarity(Rarity.RARE)
             ));
 }
