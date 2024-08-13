@@ -1,5 +1,6 @@
 package github.Ph0enis.Gartic;
 
+import github.Ph0enis.Gartic.init.ModBlocks;
 import github.Ph0enis.Gartic.init.ModItems;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -13,5 +14,6 @@ public class Gartic {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.ITEMS.register(bus);
+        ModBlocks.BLOCKS.register(bus);
     }
 }
