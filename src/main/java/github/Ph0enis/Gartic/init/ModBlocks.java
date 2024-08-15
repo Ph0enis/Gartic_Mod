@@ -19,7 +19,6 @@ public class ModBlocks {
                     .mapColor(MapColor.COLOR_BLUE)
                     .strength(5.0f, 17f)
                     .instrument(NoteBlockInstrument.BANJO)
-                    .lightLevel(state -> 15)
                     .requiresCorrectToolForDrops()
                     .pushReaction(PushReaction.DESTROY)
             ));
